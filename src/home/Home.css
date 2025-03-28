@@ -1,0 +1,112 @@
+:root {
+  --red: #E52472;
+  --dark-red: #BB1055;
+  --white: #ffffff;
+  --dark: #0F0A2A;
+  --light-blue: #23C3E3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 96px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 96px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 48px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 36px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+
+a:hover {
+  color: var(--dark-red);
+}
+
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.links {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b2a9e;
+  gap: 5vw;
+}
+
+
+.logo {
+  background-image: url("/src/assets/logo-columbia.svg");
+  background-color: #ffffff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  background-color: #0F0A2A;
+  width: 20%;
+}
+
+button {
+  background-color: var(--light-blue);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: var(--white)
+}
+
+button:hover {
+  background-color: var(--dark);
+}
+
+.botao {
+  background-color: #007bff; /* Azul */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 12px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border-radius: 8px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de mão */
+  transition: 0.3s ease-in-out; /* Suavização da transição */
+}
