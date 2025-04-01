@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-  color: var(--dark-red);
+  color: var(--light-blue);
   transition: 0.4s ease;
 }
 
