@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@700&display=swap");
 
 
 :root {
 
     --primary-color: #e52472;
-    --secondary-color: hsl(0, 0%, 7%);
+    --secondary-color: #23c3e3;
     --secondary-color-light: #232220;
     --text-light: #a3a3a3;
     --white: #ffffff;
@@ -33,11 +34,111 @@ body {
     width: 100%;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
+.desktop header {
+    position: absolute;
     width: 100%;
     height: 100px;
-    background-color: var(--primary-color);
+    top: 0;
+    left: 0;
+    background-color: #e52472;
 
+}
+
+.desktop nav {
+    position: relative;
+    width: 1080px;
+    height: 44px;
+    top: 28px;
+    left: 180px;
+
+}
+
+.desktop .logo-columbia {
+    position: absolute;
+    width: 144px;
+    height: 28px;
+    top: 8px;
+    left: 0;
+}
+
+.desktop .login_button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    top: 0;
+    left: 960px;
+    border-radius: 10px;
+    border: 2px solid;
+    border-color: #ffffff;
+    position: relative;
+    width: fit-content;
+    margin-top: -2.00px;
+    font-family: "Figtree", Helvetica, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.desktop .login_button:hover {
+    color: var(--secondary-color);
+}
+
+
+.desktop .register_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    top: 0;
+    left: 790px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border-color: var(--secondary-color);
+    position: absolute;
+    margin-top: -1px;
+    margin-top: -1.00px;
+    font-family: "Figtree-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.desktop .register_button:hover {
+    color: var(--primary-color);
+}
+
+.desktop .nav_links {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    width: 81px;
+    height: 24px;
+    top: 10px;
+    left: 245px;
+    gap: 4rem;
+
+}
+
+.desktop .link a {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.desktop .link a:hover {
+    color: var(--secondary-color);
 }
