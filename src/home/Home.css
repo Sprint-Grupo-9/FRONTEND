@@ -2,8 +2,15 @@
   --red: #E52472;
   --dark-red: #BB1055;
   --white: #ffffff;
+  --light-gray: #fcfcfc;
   --dark: #0F0A2A;
-  --light-blue: #23C3E3;
+  --light-blue: #87bafd;
+  --light-blue-2: #5f8cc6;
+  --gray: #F2F2F2;
+  --image-blue: #CEE2FF;
+
+  /* --shadow: 2px 2px 10px #353535; */
+  
 }
 
 * {
@@ -15,14 +22,20 @@
   font-style: normal;
 }
 
+body {
+  background-color: var(--light-gray);
+}
+
 h1 {
   font-weight: 900;
-  font-size: 96px;
+  font-size: 80px;
+  color: var(--red);
 }
 
 h2 {
   font-weight: 500;
-  font-size: 96px;
+  font-size: 80px;
+  color: var(--dark);
 }
 
 h3 {
@@ -37,7 +50,7 @@ h4 {
 
 p {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a {
@@ -45,68 +58,191 @@ a {
   font-size: 20px;
   text-decoration: none;
   color: var(--white);
+  transition: 0.4s ease;
 }
 
 a:hover {
   color: var(--dark-red);
+  transition: 0.4s ease;
 }
 
 .header {
+  position: fixed;
   width: 100%;
-  height: 10vh;
+  height: 12vh;
   background-color: var(--red);
   display: flex;
   justify-content: center;
-  padding-left: 10vw;
-  padding-right: 10vw;
 }
+
+.content-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+} 
 
 .links {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3b2a9e;
-  gap: 5vw;
+  gap: 4vw;
 }
 
 
 .logo {
-  background-image: url("/src/assets/logo-columbia.svg");
-  background-color: #ffffff;
-}
-
-.buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2vw;
-  background-color: #0F0A2A;
-  width: 20%;
+}
+
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1vw;
+  width: 30%;
 }
 
 button {
-  background-color: var(--light-blue);
-  padding: 10px;
+  padding-inline: 20px;
+  padding-block: 10px;
   border-radius: 10px;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 700;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease;
+}
+
+.button-primary {
+  background-color: var(--light-blue);
   color: var(--white)
 }
 
-button:hover {
-  background-color: var(--dark);
+.button-secondary {
+  background-color: transparent;
+  outline: 2px solid var(--white); 
+  outline-offset: -2px;  
+  color: var(--white)
 }
 
-.botao {
-  background-color: #007bff; /* Azul */
-  color: white; /* Texto branco */
-  border: none; /* Sem borda */
-  padding: 12px 20px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
-  border-radius: 8px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de mão */
-  transition: 0.3s ease-in-out; /* Suavização da transição */
+.button-tertiary {
+  background-color: var(--dark);
+  color: var(--white)
 }
+
+.button-primary:hover, .button-secondary:hover, .button-tertiary:hover {
+  transition: 0.4s ease;
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.banner {
+  width: 100%;
+  height: 800px;
+  background-image: url('../assets/banner-dog.svg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 0px 0px 200px 0px;
+}
+
+.content-banner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+  justify-content: flex-start; 
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 2vh;
+  }
+}
+
+.titulo-banner {
+  width: 90%;
+}
+
+.titulo-services {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12vh;
+}
+
+.services {
+  width: 100%;
+  height: 800px;
+  background-color: var(--light-gray); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 0px 0px 200px 0px;
+}
+
+.cards {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
+}
+
+.card-service {
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  padding: 4vb;
+  gap: 4vh;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    width: 50%;
+  }
+}
+
+.image-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-width: 6vw;
+  max-height: 12vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-image {
+  background-color: var(--image-blue);
+  border-radius: 5px;
+  width: 5vw;
+  height: 10vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
