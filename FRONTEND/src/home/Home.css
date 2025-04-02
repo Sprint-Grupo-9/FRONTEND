@@ -1,0 +1,344 @@
+:root {
+    --red: #E52472;
+    --dark-red: #BB1055;
+    --white: #ffffff;
+    --light-gray: #fcfcfc;
+    --dark: #0F0A2A;
+    --light-blue: #87bafd;
+    --light-blue-2: #5f8cc6;
+    --gray: #F2F2F2;
+    --image-blue: #CEE2FF;
+  
+    /* --shadow: 2px 2px 10px #353535; */
+    
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  body {
+    background-color: var(--light-gray);
+  }
+  
+  h1 {
+    font-weight: 900;
+    font-size: 80px;
+    color: var(--red);
+  }
+  
+  h2 {
+    font-weight: 500;
+    font-size: 80px;
+    color: var(--dark);
+  }
+  
+  h3 {
+    font-weight: 500;
+    font-size: 48px;
+  }
+  
+  h4 {
+    font-weight: 300;
+    font-size: 36px;
+  }
+  
+  p {
+    font-weight: 300;
+    font-size: 20px;
+  }
+  
+  a {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.4s ease;
+  }
+  
+  a:hover {
+    color: var(--light-blue);
+    transition: 0.4s ease;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  } 
+  
+  .links {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+  
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1vw;
+    width: 30%;
+  }
+  
+  button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  
+  .button-primary {
+    background-color: var(--light-blue);
+    color: var(--white)
+  }
+  
+  .button-secondary {
+    background-color: transparent;
+    outline: 2px solid var(--white); 
+    outline-offset: -2px;  
+    color: var(--white)
+  }
+  
+  .button-tertiary {
+    background-color: var(--dark);
+    color: var(--white)
+  }
+  
+  .button-primary:hover, .button-secondary:hover, .button-tertiary:hover {
+    transition: 0.4s ease;
+    background-color: var(--white);
+    color: var(--red);
+  }
+  
+  .banner {
+    width: 100%;
+    height: 800px;
+    background-image: url('../assets/banner-dog.svg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0px 0px 200px 0px;
+  }
+  
+  .content-banner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    justify-content: flex-start; 
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      gap: 2vh;
+    }
+  }
+  
+  .titulo-banner {
+    width: 90%;
+  }
+  
+  .titulo-services {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12vh;
+  }
+  
+  .services {
+    width: 100%;
+    height: 800px;
+    background-color: var(--light-gray); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 0px 0px 200px 0px;
+  }
+  
+  .cards {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }
+  
+  .card-service {
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 4vb;
+    gap: 4vh;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+  
+    button {
+      width: 50%;
+    }
+  }
+  
+  .image-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    max-width: 6vw;
+    max-height: 12vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .individual-image {
+    background-color: var(--image-blue);
+    border-radius: 5px;
+    width: 5vw;
+    height: 10vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-about {
+    top: 1340px;
+    position: absolute;
+    width: 1440px;
+    height: 630px;
+    left: 0;
+  }
+
+  .about-content {
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    top: 1347px;
+    left: 0;
+    background-image: url(./img/tab-about.svg);
+    background-size: 100% 100%;
+    /* position: relative; */
+    /* width: 997px;
+    height: 288px;
+    top: 166px;
+    left: 262px; */
+  }
+
+  .about-content .descricao{
+    position: absolute;
+    width: 532px;
+    top: 142px;
+    left: 0;
+    font-family: "Figtree-Light", Helvetica;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .about-content .endereco {
+    position: absolute;
+    width: 398px;
+    top: 216px;
+    left: 581px;
+    font-family: "Figtree-Bold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+
+  .about-content .about-image {
+    position: absolute;
+    width: 318px;
+    height: 194px;
+    top: 0;
+    left: 675px;
+    background-color: #fffef6;
+    border-radius: 25px;
+  }
+
+  .about-content .mask-group {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 7px;
+    left: 9px;
+  }
+
+  .about-content .about-title {
+    position: absolute;
+    width: 232px;
+    height: 75px;
+    top: 34px;
+    left: 0;
+  }
+
+  .about-content .about-title .test-sobre {
+    top: 17px;
+    font-family: "Figtree-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    left: 0;
+  }
+
+  .about-content .about-title .pata-sobre {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 110px;
+  }
+
