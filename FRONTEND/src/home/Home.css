@@ -246,6 +246,24 @@
     align-items: center;
   }
 
+  .about-image {
+    position: absolute;
+    width: 318px;
+    height: 194px;
+    top: 0;
+    left: 675px;
+    background-color: #fffef6;
+    border-radius: 25px;
+  }
+
+  .about-image .mask-group {
+    position: absolute;
+    width: 300px;
+    height: 180px;
+    top: 7px;
+    left: 9px;
+  }
+
   .sobre-container {
     position: absolute;
     width: 100%;
@@ -292,7 +310,7 @@
     line-height: normal;
   }
 
-  .sobre-container .about-content .about-image {
+  /* .sobre-container .about-content .about-image {
     position: absolute;
     width: 318px;
     height: 194px;
@@ -308,9 +326,9 @@
     height: 180px;
     top: 7px;
     left: 9px;
-  }
+  } */
 
-  .sobre-container .about-content .about-title {
+  .sobre-container .about-content .about-image .about-title {
     position: absolute;
     width: 235px;
     height: 75px;
