@@ -67,7 +67,7 @@
   }
   
   .header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 12vh;
     background-color: var(--red);
@@ -185,7 +185,7 @@
   
   .services {
     width: 100%;
-    height: 800px;
+    height: 500px;
     background-color: var(--light-gray); 
     background-size: cover; 
     background-position: center; 
@@ -246,30 +246,26 @@
     align-items: center;
   }
 
-  .tab-about {
-    top: 1340px;
-    position: absolute;
-    width: 1440px;
-    height: 630px;
-    left: 0;
-  }
-
-  .about-content {
+  .sobre-container {
     position: absolute;
     width: 100%;
-    height: 620px;
+    height: 550px;
     top: 1347px;
     left: 0;
-    background-image: url(./img/tab-about.svg);
+    background-image: url(../assets/tab-about.png);
     background-size: 100% 100%;
-    /* position: relative; */
-    /* width: 997px;
-    height: 288px;
-    top: 166px;
-    left: 262px; */
   }
 
-  .about-content .descricao{
+
+  .sobre-container .about-content {
+    position: relative;
+    width: 997px;
+    height: 288px;
+    top: 120px;
+    left: 262px;
+  }
+
+  .sobre-container .about-content .descricao{
     position: absolute;
     width: 532px;
     top: 142px;
@@ -282,7 +278,7 @@
     line-height: normal;
   }
 
-  .about-content .endereco {
+  .sobre-container .about-content .endereco {
     position: absolute;
     width: 398px;
     top: 216px;
@@ -296,7 +292,7 @@
     line-height: normal;
   }
 
-  .about-content .about-image {
+  .sobre-container .about-content .about-image {
     position: absolute;
     width: 318px;
     height: 194px;
@@ -306,7 +302,7 @@
     border-radius: 25px;
   }
 
-  .about-content .mask-group {
+  .sobre-container .about-content .mask-group {
     position: absolute;
     width: 300px;
     height: 180px;
@@ -314,15 +310,15 @@
     left: 9px;
   }
 
-  .about-content .about-title {
+  .sobre-container .about-content .about-title {
     position: absolute;
-    width: 232px;
+    width: 235px;
     height: 75px;
-    top: 34px;
-    left: 0;
+    top: 0px;
+    left: 0px;
   }
 
-  .about-content .about-title .test-sobre {
+  .sobre-container .about-content .about-title .text-sobre {
     top: 17px;
     font-family: "Figtree-Bold", Helvetica;
     font-weight: 700;
@@ -334,7 +330,7 @@
     left: 0;
   }
 
-  .about-content .about-title .pata-sobre {
+  .sobre-container .about-content .about-title .pata-sobre {
     position: absolute;
     width: 25px;
     height: 25px;
