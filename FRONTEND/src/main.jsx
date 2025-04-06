@@ -5,6 +5,7 @@ import Header from './home/Header'
 import Banner from './home/Banner'
 import Services from './home/Services'
 import Sobre from './home/Sobre'
+import Equipe from './home/Equipe'
 
 
 createRoot(document.getElementById('root')).render(
@@ -14,6 +15,7 @@ createRoot(document.getElementById('root')).render(
       <Banner />
       <Services />
       <Sobre />
+      <Equipe />
     </body>
   </StrictMode>
 

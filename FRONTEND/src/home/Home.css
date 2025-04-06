@@ -394,3 +394,93 @@
     left: 110px;
   }
 
+ 
+
+   .card-time {
+    position: absolute;
+    width: 209px;
+    height: 180px;
+    top: 214px;
+    left: 0;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+  }
+
+  .card-time .mask-group-wrapper {
+    position: absolute;
+    width: 104px;
+    height: 104px;
+    top: 20px;
+    left: 52px;
+    background-color: #ffffff;
+    border-radius: 15px;
+  }
+
+
+  .card-time .mask-group-2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 7px;
+    left: 7px;
+  }
+
+  .card-time .text-card-time {
+    left: 78px;
+    color: #0f0a2a;
+    position: absolute;
+    top: 135px;
+    font-family: "Figtree-Bold", Helvetica;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+
+  .time-container {
+    position: absolute;
+    width: 1440px;
+    height: 833px;
+    top: 1967px;
+    left: 0;
+  }
+
+  .time-container  .time {
+    position: absolute;
+    width: 996px;
+    height: 394px;
+    top: 137px;
+    left: 234px;
+  }
+
+  .time-container  .time .time-titulo{
+      position: absolute;
+      width: 154px;
+      height: 76px;
+      top: 150px;
+      left: 832px;
+    
+  }
+
+  .time-container .time .time-titulo .text-time {
+    top: 18px;
+    font-family: "Figtree-Bold", Helvetica;
+    font-weight: 700;
+    color: #0f0a2a;
+    font-size: 48px;
+    text-align: right;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    left: 0;
+  }
+
+  .time-container .time .cards-equipe{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+  }

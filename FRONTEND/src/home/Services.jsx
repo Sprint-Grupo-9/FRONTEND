@@ -7,8 +7,6 @@ function Services() {
 
                 <div className="services">
 
-                    
-
                     <div className="titulo-services">
                         <h3>Serviços</h3>
                     </div>
