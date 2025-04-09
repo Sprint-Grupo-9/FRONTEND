@@ -764,6 +764,59 @@
     left: 151px;
     background-image: url(../assets/insta-icon.png);
   }
+
+  .footer-content .navigation-links {
+    position: absolute;
+    width: 76px;
+    height: 145px;
+    top: 0;
+    left: 0;
+  }
+
+  .footer-content .contato {
+    width: 60px;
+    height: 19px;
+    top: 126px;
+    position: absolute;
+    left: 0;
+  }
+
+  .footer-content .text-links {
+    top: -1px;
+    font-family: "Figtree-Medium", Helvetica;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+  }
+  
+  .footer-content .equipe {
+    width: 50px;
+    height: 19px;
+    top: 84px;
+    position: absolute;
+    left: 0;
+  }
+  
+  .footer-content .servios {
+    width: 62px;
+    height: 19px;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+  
+  .footer-content .sobre-ns {
+    width: 76px;
+    height: 19px;
+    top: 42px;
+    position: absolute;
+    left: 0;
+  }
   
 
    

@@ -20,10 +20,10 @@ function Footer() {
               </div>
             </div>
             <div className="navigation-links">
-              <div className="contato"><div class="text-wrapper-21">Contato</div></div>
-              <div className="equipe"><div class="text-wrapper-21">Equipe</div></div>
-              <div className="servios"><div class="text-wrapper-21">Serviços</div></div>
-              <div className="sobre-ns"><div class="text-wrapper-21">Sobre Nós</div></div>
+              <div className="contato"><div class="text-links">Contato</div></div>
+              <div className="equipe"><div class="text-links">Equipe</div></div>
+              <div className="servios"><div class="text-links">Serviços</div></div>
+              <div className="sobre-ns"><div class="text-links">Sobre Nós</div></div>
             </div>
         </section>
     )
