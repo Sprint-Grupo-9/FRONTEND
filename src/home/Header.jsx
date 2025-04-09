@@ -22,7 +22,6 @@ function Header() {
           <button className='button-secondary'>Login</button>
         </div>
       </div>
-
     </div>
   )
 }
