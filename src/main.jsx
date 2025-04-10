@@ -8,12 +8,12 @@ import Users from './system/Users'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <body>
+    <div>
       {/* <Header/>
       <Banner/>
-      <Services/>
-      <Users/> */}
-      <Users/>
-    </body>
+      <Services/>*/}
+      <Users />
+    </div>
+
   </StrictMode>
 )

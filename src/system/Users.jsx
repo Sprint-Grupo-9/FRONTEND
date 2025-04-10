@@ -1,13 +1,15 @@
 import '../home/Home.css'
 
-import HeaderSystem from '../home/HeaderSystem'
+import HeaderSystem from '../system/HeaderSystem'
+import UserScreen from '../system/UserScreen'
+
 
 function Users() {
     return (
-        <div>
+        <>
             <HeaderSystem/>
-        </div>
-
+            <UserScreen/>
+        </>
     )
 }
 

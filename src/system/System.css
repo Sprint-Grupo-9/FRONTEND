@@ -1,0 +1,145 @@
+:root {
+    --red: #E52472;
+    --dark-red: #BB1055;
+    --white: #ffffff;
+    --light-gray: #fcfcfc;
+    --dark: #0F0A2A;
+    --light-blue: #87bafd;
+    --light-blue-2: #5f8cc6;
+    --gray: #F2F2F2;
+    --dark-gray: #BDBDBD;
+    --image-blue: #CEE2FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--dark);
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.user-screen {
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.total-content {
+    display: flex;
+    width: 90%;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.navigation-content {
+    width: 20%;
+}
+
+.user-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.content {
+    background-color: #554c94;
+    width: 70%;
+}
+
+.navigation-buttons {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    padding-inline: 20px;
+    padding-block: 10px;
+    border-radius: 10px;
+    text-align: start;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+
+  .button-primary {
+    background-color: var(--light-blue);
+    color: var(--white)
+  }
+  
+  .button-secondary {
+    background-color: transparent;
+    outline: 2px solid var(--white);
+    outline-offset: -2px;
+    color: var(--white)
+  }
+  
+  .button-tertiary {
+    background-color: var(--dark);
+    color: var(--white)
+  }
+  
+  .button-primary:hover,
+  .button-secondary:hover,
+  .button-tertiary:hover {
+    transition: 0.4s ease;
+    background-color: var(--white);
+    color: var(--red);
+  }
+
+  .button-navigation {
+    transition: 0.4s ease;
+    background-color: var(--white);
+    color: var(--dark);
+  }
+
+  
+  .button-navigation:hover {
+    transition: 0.4s ease;
+    background-color: var(--dark-gray);
+    color: var(--white);
+  }
