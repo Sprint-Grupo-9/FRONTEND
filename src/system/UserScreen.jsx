@@ -1,4 +1,5 @@
 
+import Textbox from '../components/Textbox'
 import UserImage from '../components/UserImage'
 import './System.css'
 
@@ -20,7 +21,7 @@ function UserScreen() {
           </div>
         </div>
         <div className="content">
-          <h2>Perfil do Usuário</h2>
+          <Textbox label='Nome' placeholder='' value=''></Textbox>
         </div>
       </div>
     </div>
