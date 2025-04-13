@@ -12,13 +12,35 @@ import PenciIcon from '../assets/pencil-icon.svg'
 
 import { useNavigate } from "react-router-dom";
 
+import HeaderScreen from './HeaderScreen'
+
 
 import './System.css'
 
 function AppointsScreen() {
 
+    const navigate = useNavigate();
+  
+  const goToProfile = () => {
+    navigate("/");
+  };
+
+  const goToServices = () => {
+    navigate("/services");
+  };
+
+  const goToAppoints = () => {
+    navigate("/appointments");
+  };
+
+  const goToPets = () => {
+    navigate("/pets");
+  };
+
   return (
-    <div className="user-screen">
+    <div>
+      <HeaderScreen Titulo="Agendamentos" />
+      <div className="user-screen">
       <div className='total-content'>
         <div className="navigation-content">
           <div className="user-profile">
@@ -26,10 +48,10 @@ function AppointsScreen() {
             <h2>Matheus</h2>
           </div>
           <div className="navigation-buttons">
-            <IconButton link={UserIcon} text={'Perfil'} active={false} />
-            <IconButton link={ServicesIcon} text={'Serviços'} active={false} />
-            <IconButton link={AppointsIcon} text={'Agendamentos'} active={true} />
-            <IconButton link={PetsIcon} text={'Pets'} active={false} />
+            <IconButton action={goToProfile} link={UserIcon} text={'Perfil'} active={false} />
+            <IconButton action={goToServices} link={ServicesIcon} text={'Serviços'} active={false} />
+            <IconButton action={goToAppoints} link={AppointsIcon} text={'Agendamentos'} active={true} />
+            <IconButton action={goToPets} link={PetsIcon} text={'Pets'} active={false} />
           </div>
 
         </div>
@@ -39,6 +61,8 @@ function AppointsScreen() {
         </div>
       </div>
     </div>
+    </div>
+    
   )
 }
 

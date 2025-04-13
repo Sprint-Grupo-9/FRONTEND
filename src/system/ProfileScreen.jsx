@@ -19,9 +19,21 @@ import HeaderScreen from './HeaderScreen'
 function ProfileScreen() {
 
   const navigate = useNavigate();
+  
+  const goToProfile = () => {
+    navigate("/");
+  };
 
   const goToServices = () => {
     navigate("/services");
+  };
+
+  const goToAppoints = () => {
+    navigate("/appointments");
+  };
+
+  const goToPets = () => {
+    navigate("/pets");
   };
 
   return (
@@ -35,10 +47,10 @@ function ProfileScreen() {
             <h2>Matheus</h2>
           </div>
           <div className="navigation-buttons">
-            <IconButton link={UserIcon} text={'Perfil'} active={true} />
+            <IconButton action={""}           link={UserIcon} text={'Perfil'} active={true} />
             <IconButton action={goToServices} link={ServicesIcon} text={'Serviços'} active={false} />
-            <IconButton link={AppointsIcon} text={'Agendamentos'} active={false} />
-            <IconButton link={PetsIcon} text={'Pets'} active={false} />
+            <IconButton action={goToAppoints} link={AppointsIcon} text={'Agendamentos'} active={false} />
+            <IconButton action={goToPets}     link={PetsIcon} text={'Pets'} active={false} />
           </div>
         </div>
 
