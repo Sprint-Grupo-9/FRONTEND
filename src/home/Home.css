@@ -128,7 +128,7 @@ button {
   background-color: transparent;
   outline: 2px solid var(--white);
   outline-offset: -2px;
-  color: var(--white)
+  color: var(--white);
 }
 
 .button-tertiary {
