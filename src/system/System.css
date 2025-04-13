@@ -115,6 +115,7 @@ h3 {
     width: 75%;
     flex-direction: row;
     justify-content: end;
+    gap: 2vw;
     margin-bottom: 4vh;
 }
 
@@ -154,18 +155,26 @@ button {
     background-color: transparent;
     outline: 2px solid var(--white);
     outline-offset: -2px;
+    display: flex;
+    gap: 1vw;
     color: var(--white);
 
     img {
         transition: 0.4s ease;
-        margin-right: 0.5vw;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
     }
 }
 
 .button-tertiary {
     background-color: var(--dark);
-    color: var(--white)
+    color: var(--white);
+    display: flex;
+    gap: 1vw;
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
 }
 
 .button-primary:hover,
