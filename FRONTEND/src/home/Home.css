@@ -210,26 +210,49 @@
     left: 17px;
     background-image: url(../assets/tab-services.png);
   } */
-
-  .services {
+  
+  .container-service {
+    position: absolute;
     width: 100%;
     height: 500px;
-    background-color: var(--light-gray); 
+    top: 800px;
+    left: -17px;
+  }
+
+
+ .container-service .rectangle {
+    position: absolute;
+    width: 100%;
+    height: 347px;
+    top: 200px;
+    left: 0px;
+    background-color: #bb0f54;
+  }
+
+ 
+
+  .container-service .services {
+    position: absolute;
+    width: 100%;
+    height: 509px;
+    top: 40px;
+    left: 17px;
     background-size: cover; 
     background-position: center; 
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    background-image: url(../assets/tab-services.png); 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     font-size: 28px;
     font-weight: bold;
-    border-radius: 0px 0px 200px 0px;
+    /* border-radius: 0px 0px 200px 0px; */
   }
 
   
   
-  .cards {
+  .container-service .services .cards {
     display: flex;
     width: 80%;
     justify-content: center;
@@ -237,7 +260,7 @@
     gap: 4vw;
   }
   
-  .card-service {
+ .card-service {
     background-color: var(--gray);
     display: flex;
     flex-direction: column;
@@ -275,13 +298,13 @@
     justify-content: center;
     align-items: center;
   }
-   .services .rectangle {
+   
+  .container-service .services .titulo-services .pata-services {
     position: absolute;
-    width: 100%;
-    height: 347px;
-    top: 1000px;
-    left: 0px;
-    background-color: #bb0f54;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 130px;
   }
 
   .about-image {
