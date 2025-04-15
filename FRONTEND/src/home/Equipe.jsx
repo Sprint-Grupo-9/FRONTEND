@@ -6,6 +6,8 @@ function Equipe() {
 
     return (
         <section className='time-container'>
+            <div className='rectangle-33'></div>
+            <img className='img-2' src="src/assets/tab-team.png" alt="" />
             <div className="team-content">
                 <div className="overlap-9">
                     <div className="text-wrapper-13">Dora</div>

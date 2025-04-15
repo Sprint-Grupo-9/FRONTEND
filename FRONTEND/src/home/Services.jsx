@@ -4,11 +4,13 @@ import Card from './components/Card'
 function Services() {
     return (
         <>
-            
-            <div className='container-service'>
 
             <div className='rectangle'></div>
-                {/* <img className="tab-services" src="src/assets/tab-services.png" /> */}
+            <img className="tab-services" src="src/assets/tab-services.png" />
+
+            <div className='container-service'>
+
+
 
                 <div className="services">
                     <div className="titulo-services">
