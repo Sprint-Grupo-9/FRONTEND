@@ -18,7 +18,7 @@ function Sobre() {
 
           <p className='endereco'>
             <span class="text-endereco">Endereço: <br /></span>
-            <span class="text-endereco">Rua Columbia 123, Vila Boa<br />São Paulo, SP </span>
+            <span class="text-endereco">Rua Columbia 971, Parque das Nações<br />Santo Andé, SP </span>
           </p>
 
           <div className='card-sobre'>
