@@ -61,6 +61,7 @@ function ProfileScreen() {
               <button className='button-tertiary'> <img src={SaveIcon} width={20} /> Salvar Dados </button>
               <button className='button-primary'> <img src={PenciIcon} width={20} /> Editar Dados </button>
             </div>
+
             <div className="row">
               <Textbox label='Nome' placeholder='Matheus' value='Matheus'></Textbox>
               <Textbox label='CPF' placeholder='440.824.488-02' value=''></Textbox>
@@ -74,7 +75,7 @@ function ProfileScreen() {
             <div className="row">
               <Textbox label='CEP' placeholder='01504-000' value='' size="2"></Textbox>
               <Textbox label='Número' placeholder='266' value='' size="3"></Textbox>
-              <Textbox label='Complemento' placeholder='Ap. 51' value=''></Textbox>
+              <Textbox label='Complemento' placeholder='Ap. 51' value=''></Textbox> 
             </div>
 
             <div className="row">
@@ -87,6 +88,7 @@ function ProfileScreen() {
               <Textbox label='Confirmar Senha' placeholder='***********' value=''></Textbox>
             </div>
           </div>
+
         </div>
       </div>
     </div>

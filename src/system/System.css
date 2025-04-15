@@ -44,6 +44,23 @@ h3 {
     color: var(--dark);
 }
 
+p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--red);
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--dark-gray);
+}
 .header {
     position: relative;
     width: 100%;
@@ -100,23 +117,40 @@ h3 {
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    gap: 2vh;
+    padding-inline: 6vw;
 }
 
 .row {
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 2vh;
+}
+
+.row-2 {
+    display: flex;
+    width: 30%;
+    gap: 5vw;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .row-button {
     display: flex;
-    width: 75%;
+    width: 100%;
     flex-direction: row;
     justify-content: end;
-    gap: 2vw;
-    margin-bottom: 4vh;
+    gap: 1vw;
+}
+
+
+.column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #81dcaf;
 }
 
 .navigation-buttons {
@@ -177,6 +211,30 @@ button {
     }
 }
 
+.button-quaternary {
+    background-color: var(--light-blue);
+    color: var(--white);
+    display: flex;
+    gap: 1vw;
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
+.button-quinary {
+    background-color: var(--white);
+    display: flex;
+    gap: 1vw;
+    color: var(--dark);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(25%) sepia(45%) saturate(7435%) hue-rotate(323deg) brightness(95%) contrast(89%);
+    }
+}
+
 .button-primary:hover,
 .button-secondary:hover,
 .button-tertiary:hover {
@@ -190,6 +248,29 @@ button {
     }
 
 }
+
+.button-quaternary:hover {
+    transition: 0.4s ease;
+    background-color: var(--dark);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
+.button-quinary:hover {
+    transition: 0.4s ease;
+    background-color: var(--dark-gray);
+    color: var(--white);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
+
 
 .button-navigation {
     transition: 0.4s ease;
@@ -224,7 +305,6 @@ button {
 .button-navigation:hover {
     transition: 0.4s ease;
     background-color: var(--dark-gray); 
-    
 
     img {
         margin-right: 1vw;
@@ -234,23 +314,21 @@ button {
     h3 {
         color: var(--white);
     }
-
-    }
+}
     
-
 .textbox-1 {
-    margin-left: 2vw;
     width: 20vw;
+    margin-left: 1vw;
 }
 
 .textbox-2 {
-    margin-left: 2vw;
-    width: 13vw;
+    width: 12vw;
+    margin-left: 1vw;
 }
 
 .textbox-3 {
-    margin-left: 2vw;
-    width: 5vw;
+    width: 7vw;
+    margin-left: 1vw;
 }
 
 .input-group {
@@ -282,4 +360,98 @@ button {
   input:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--light-blue);
+  }
+
+  .card-service {
+    background-color: var(--white);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    button {
+        width: 70%;
+    }
+
+    .img-background {
+        width: 20%; 
+    }
+
+    .content-card {
+        width: 90%;
+    }
+
+    .data {
+        width: 30%;
+    }
+
+  }
+
+  .card-service {
+    background-color: var(--white);
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    button {
+        width: 70%;
+    }
+
+    .img-background {
+        width: 20%; 
+    }
+
+    .content-card {
+        width: 90%;
+    }
+
+    .data {
+        width: 30%;
+    }
+
+  }
+
+  .card-service-2 {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .data {
+        width: 30%;
+    }
+
+  }
+
+  .img-background {
+    background-color: #0F0A2A;
+    border-radius: 20px;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .data {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spacer {
+    width: 40%;
+  }
+
+  .spacer-2 {
+    width: 80%;
   }
