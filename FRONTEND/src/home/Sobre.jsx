@@ -29,7 +29,7 @@ function Sobre() {
 
           <div className='about-title'>
             <div className='text-sobre'><h3>Sobre Nós</h3></div>
-            <img className='pata-sobre' src="{imageLinkPata}" alt="" />
+            <img className='pata-sobre' src="src/assets/pata-sobre.png" alt="" />
           </div>
 
         </div>

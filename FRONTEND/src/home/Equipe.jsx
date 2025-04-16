@@ -36,7 +36,7 @@ function Equipe() {
                 <div className="team-title">
                     <div className="overlap-group-3">
                         <div className="text-wrapper-19">Equipe</div>
-                        {/* <img className="pata-equipe" src="img/pata-equipe.png" /> */}
+                        <img className="pata-equipe" src="src/assets/pata-services.png" />
                     </div>
                 </div>
             </div>

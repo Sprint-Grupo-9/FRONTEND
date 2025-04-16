@@ -15,7 +15,7 @@ function Services() {
                 <div className="services">
                     <div className="titulo-services">
                         <h3>Serviços</h3>
-                        <img class="pata-services" src="img/pata-services.png" />
+                        <img class="pata-services" src="src/assets/pata-services.png" />
                     </div>
                     <div className="cards">
                         <Card texto="Banho e Tosa" link="src/assets/banho-logo.svg" />

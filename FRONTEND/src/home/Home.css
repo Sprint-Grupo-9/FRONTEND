@@ -250,7 +250,7 @@ button {
   position: relative;
   width: 100%;
   /* height: 509px; */
-  top: 45px;
+  top:55px;
   /* left: 17px; */
   background-size: cover;
   background-position: center;
@@ -315,12 +315,20 @@ button {
   align-items: center;
 }
 
-.container-service .services .titulo-services .pata-services {
+/* .container-service .services .titulo-services {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+
+} */
+
+.container-service .services .pata-services {
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 0;
-  left: 130px;
+  top: -13px;
+  left: 700px;
+  background-image: url(../assets/pata-services.png);
 }
 
 .about-image {
@@ -457,7 +465,7 @@ button {
   top: 0px;
   left: 0px;
   background-repeat: no-repeat;
-  background-image: url(../assets/tab-team.png);
+  
 }
 
 .time-container .team-content {
@@ -734,7 +742,7 @@ button {
   left: 0;
 }
 
-.desktop .pata-equipe {
+.time-container .team-content .pata-equipe {
   position: absolute;
   width: 25px;
   height: 25px;
