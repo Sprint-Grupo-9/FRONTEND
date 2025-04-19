@@ -11,13 +11,13 @@ import PetsIcon from '../assets/pets-icon.svg'
 import PenciIcon from '../assets/pencil-icon.svg'
 import ExcludeIcon from '../assets/exclude-icon.svg'
 
-
+import { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 
 import './System.css'
 import HeaderScreen from './HeaderScreen'
 import Service from '../components/Service'
-import ServiceTop from '../components/ServiceTop'
+import Subservice from '../components/Subservice'
 import Card from '../components/Card'
 
 function ServicesScreen() {
@@ -39,6 +39,12 @@ function ServicesScreen() {
   const goToPets = () => {
     navigate("/pets");
   };
+
+  const [serviceOpen, setServiceOpen] = useState(false)
+
+  const toggleService = () => {
+    setServiceOpen(prev => !prev)
+  }
 
   return (
     <div>
@@ -64,14 +70,45 @@ function ServicesScreen() {
               <button className='button-quinary'> Serviço 2 <img src={ExcludeIcon} width={16} /> </button>
               <button className='button-quinary'> Serviço 3 <img src={ExcludeIcon} width={16} /> </button>
             </div>
-            <Service 
-              text="Banho e Tosa" 
-              description="Descrição do Serviço"
+            
+
+            <Service
+              text="Banho"
+              description="Selecione abaixo os subserviços"
+              showChevron={true}
+              onChevronClick={toggleService}
+              isChevronRotated={serviceOpen}
             />
-            <Service 
-              text="Banho e Tosa" 
+
+            {serviceOpen && (
+              <>
+              <div className='row-3'>
+                <Subservice text="Hidratação" />
+                <Subservice text="Tosa Higiênica" />
+              </div>
+              <div className='row-3'>
+                <Subservice text="Desembolo" />
+                <Subservice text="Tosa na Máquina" />
+              </div>
+              <div className='row-3'>
+                <Subservice text="Botinha" />
+                <Subservice text="Escovação" />
+              </div>
+              <div className='row-3'>
+                <Subservice text="Tosa Bebê na Máquina" />
+                
+              </div>
+              </>
+              
+            )}
+            <Service
+              text="Banho e Tosa"
               description="Descrição do Serviço"
+              showChevron={false}
             />
+            <div className="row">
+              <button className='button-primary'> Escolher Data </button>
+            </div>
           </div>
         </div>
       </div>

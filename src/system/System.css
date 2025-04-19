@@ -1,3 +1,4 @@
+
 :root {
     --red: #E52472;
     --dark-red: #BB1055;
@@ -23,7 +24,7 @@
 }
 
 body {
-    background-color: var(--light-gray);
+    background-color: var(--background-gray);
 }
 
 h1 {
@@ -362,70 +363,43 @@ button {
     box-shadow: 0 0 0 2px var(--light-blue);
   }
 
+
+
   .card-service {
     background-color: var(--white);
-    height: 20%;
+    height: 15%;
     width: 100%;
     display: flex;
     flex-direction: row;
 
     button {
-        width: 70%;
+        max-width: 30%;
     }
 
-    .img-background {
-        width: 20%; 
-    }
-
-    .content-card {
-        width: 90%;
-    }
-
-    .data {
-        width: 30%;
-    }
-
-  }
-
-  .card-service {
-    background-color: var(--white);
-    height: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-
-    button {
-        width: 70%;
-    }
-
-    .img-background {
-        width: 20%; 
+    .img-background { 
+        width: 10%;
     }
 
     .content-card {
         width: 90%;
     }
-
-    .data {
-        width: 30%;
-    }
-
   }
 
   .card-service-2 {
-    height: 20%;
-    width: 100%;
+    background-color: var(--white);
+    height: 100%;
+    width: 49%;
     display: flex;
     flex-direction: row;
-
-    .data {
-        width: 30%;
-    }
-
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2vw;
+    padding-block: 1vh;
+    border-radius: 20px;
   }
 
   .img-background {
-    background-color: #0F0A2A;
+    background-color: var(--dark-gray);
     border-radius: 20px;
     height: 6vh;
     display: flex;
@@ -455,3 +429,52 @@ button {
   .spacer-2 {
     width: 80%;
   }
+
+  .red-filter {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(2163%) hue-rotate(318deg) brightness(91%) contrast(97%);
+  }
+
+  .switch-button {
+    width: 15%;
+    height: 70%;
+    background: var(--dark-gray);
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .switch-button.active {
+    background: var(--light-blue);
+  }
+  
+  .switch-handle {
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 3px;
+    background: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    transition: left 0.3s;
+  }
+  
+  .switch-button.active .switch-handle {
+    left: 45px;
+  }
+  
+
+  .chevron {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .chevron.rotate {
+    transform: rotate(180deg);
+  }
+
+.row-3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
