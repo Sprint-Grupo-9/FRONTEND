@@ -11,14 +11,16 @@ import Footer from './home/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <body>
-      <Header />
-      <Banner />
-      <Services />
-      <Sobre />
-      <Equipe />
-      <Footer />
-    </body>
+    <>
+      <body>
+        <Header />
+        <Banner />
+        <Services />
+        <Sobre />
+        <Equipe />
+        <Footer />
+      </body>
+    </>
   </StrictMode>
 
 )

@@ -20,6 +20,7 @@
   font-family: "Figtree", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -38,10 +39,10 @@ h2 {
   color: var(--dark);
 }
 
-h3 {
+/* h3 {
   font-weight: 500;
   font-size: 48px;
-}
+} */
 
 h4 {
   font-weight: 300;
@@ -186,35 +187,10 @@ button {
   display: flex;
   justify-content: center;
   margin-bottom: 12vh;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--dark);
 }
-
-/* .service-container {
-    position: absolute;
-    width: 100%;
-    height: 629px;
-    top: 618px;
-    left: 17px;
-    background-image: url(../assets/tab-services.png);
-    background-size: 100% 100%;
-  } */
-/* .service-container {
-    position: absolute;
-    width: 1440px;
-    height: 347px;
-    top: 900px;
-    left: 17px;
-    background-color: #bb0f54;
-    
-  }
-
-  .service-container .tab-services {
-    position: absolute;
-    width: 1440px;
-    height: 629px;
-    top: 618px;
-    left: 17px;
-    background-image: url(../assets/tab-services.png);
-  } */
 
 .container-service {
   position: absolute;
@@ -314,13 +290,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-
-/* .container-service .services .titulo-services {
-  position: absolute;
-  width: 100%;
-  height: 100px;
-
-} */
 
 .container-service .services .pata-services {
   position: absolute;
@@ -840,7 +809,7 @@ button {
   width: 76px;
   height: 145px;
   top: 30px;
-  left: 50px;
+  left: 100px;
 }
 
 .footer-content .navigation-links .contato {
@@ -886,4 +855,12 @@ button {
   top: 42px;
   position: absolute;
   left: 0;
+}
+
+.footer-content .logo-columbia-2 {
+  position: absolute;
+  width: 144px;
+  height: 28px;
+  top: 75px;
+  left: 990px;
 }

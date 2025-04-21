@@ -5,6 +5,7 @@ import CardTime from './components/CardTime'
 function Equipe() {
 
     return (
+        <div id='equipe'>
         <section className='time-container'>
             <div className='rectangle-33'></div>
             <img className='img-2' src="src/assets/tab-team.png" alt="" />
@@ -41,7 +42,7 @@ function Equipe() {
                 </div>
             </div>
         </section>
-
+        </div>
 
     )
 }
