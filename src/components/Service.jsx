@@ -3,6 +3,7 @@ import PetIcon from "../assets/pet-logo.svg"
 import PlusIcon from '../assets/plus-icon.svg'
 import ChevronIcon from '../assets/chevron-icon.svg'
 import ServicesIcon from '../assets/services-icon.svg'
+import BanhoLogo from '../assets/banho-logo.svg'
 
 
 function Service({ text, description, showChevron = true, onChevronClick, isChevronRotated = false, onAddService }) {
@@ -20,7 +21,7 @@ function Service({ text, description, showChevron = true, onChevronClick, isChev
 
       <div className="img-background">
         <img
-          src={ServicesIcon}
+          src={BanhoLogo}
           alt="Logo Pet Columbia"
           width={20}
         />
