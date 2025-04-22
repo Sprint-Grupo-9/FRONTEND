@@ -1,9 +1,11 @@
 import React from "react"
-import imageLink from "../assets/pet-logo.svg"
+import PetIcon from "../assets/pet-logo.svg"
 import PlusIcon from '../assets/plus-icon.svg'
 import ChevronIcon from '../assets/chevron-icon.svg'
+import ServicesIcon from '../assets/services-icon.svg'
 
-function Service({ text, description, showChevron = true, onChevronClick, isChevronRotated = false }) {
+
+function Service({ text, description, showChevron = true, onChevronClick, isChevronRotated = false, onAddService }) {
   return (
     <div className="card-service">
       {showChevron && (
@@ -18,7 +20,7 @@ function Service({ text, description, showChevron = true, onChevronClick, isChev
 
       <div className="img-background">
         <img
-          src={imageLink}
+          src={ServicesIcon}
           alt="Logo Pet Columbia"
           width={20}
         />
@@ -29,7 +31,7 @@ function Service({ text, description, showChevron = true, onChevronClick, isChev
         <p>{description}</p>
       </div>
 
-      <button className='button-quaternary'>
+      <button className='button-quaternary' onClick={onAddService}>
         <img src={PlusIcon} width={16} /> Adicionar Serviço
       </button>
     </div>

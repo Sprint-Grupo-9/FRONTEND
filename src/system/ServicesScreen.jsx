@@ -1,49 +1,62 @@
-
 import IconButton from '../components/IconButton'
-import Textbox from '../components/Textbox'
 import UserImage from '../components/UserImage'
-import Backend from './Backend'
-
 import UserIcon from '../assets/user-icon.svg'
 import ServicesIcon from '../assets/services-icon.svg'
 import AppointsIcon from '../assets/appoints-icon.svg'
 import PetsIcon from '../assets/pets-icon.svg'
-import PenciIcon from '../assets/pencil-icon.svg'
 import ExcludeIcon from '../assets/exclude-icon.svg'
 
 import { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
 import './System.css'
 import HeaderScreen from './HeaderScreen'
 import Service from '../components/Service'
 import Subservice from '../components/Subservice'
-import Card from '../components/Card'
 
 function ServicesScreen() {
-
-  const navigate = useNavigate();
-
-  const goToProfile = () => {
-    navigate("/");
-  };
-
-  const goToServices = () => {
-    navigate("/services");
-  };
-
-  const goToAppoints = () => {
-    navigate("/appointments");
-  };
-
-  const goToPets = () => {
-    navigate("/pets");
-  };
-
+  const navigate = useNavigate()
   const [serviceOpen, setServiceOpen] = useState(false)
+  const [userServices, setUserServices] = useState([])
+  const [selectedSubservices, setSelectedSubservices] = useState({});
+
+  const goToProfile = () => navigate("/")
+  const goToServices = () => navigate("/services")
+  const goToAppoints = () => navigate("/appointments")
+  const goToPets = () => navigate("/pets")
 
   const toggleService = () => {
     setServiceOpen(prev => !prev)
+  }
+
+  const handleAddService = (serviceName) => {
+    if (!userServices.includes(serviceName)) {
+      setUserServices(prev => [...prev, serviceName])
+    }
+  }
+
+  const handleRemoveService = (indexToRemove) => {
+    setUserServices(prev => prev.filter((_, i) => i !== indexToRemove))
+  }
+
+  const handleToggleSubservice = (name, isSelected) => {
+    setSelectedSubservices(prev => ({
+      ...prev,
+      [name]: isSelected
+    }));
+  };
+
+  const goToCalendar = () => {
+    if (userServices.length === 0) {
+      alert("Por favor, adicione pelo menos um serviço antes de continuar.")
+      return
+    }
+
+    localStorage.setItem('selectedServices', JSON.stringify(userServices))
+    localStorage.setItem('selectedServices', JSON.stringify(userServices));
+    localStorage.setItem('selectedSubservices', JSON.stringify(selectedSubservices));
+
+    navigate("/calendar")
   }
 
   return (
@@ -66,11 +79,16 @@ function ServicesScreen() {
 
           <div className='content'>
             <div className="row-button">
-              <button className='button-quinary'> Serviço 1 <img src={ExcludeIcon} width={16} /> </button>
-              <button className='button-quinary'> Serviço 2 <img src={ExcludeIcon} width={16} /> </button>
-              <button className='button-quinary'> Serviço 3 <img src={ExcludeIcon} width={16} /> </button>
+              {userServices.map((service, index) => (
+                <button
+                  className='button-quinary'
+                  key={index}
+                  onClick={() => handleRemoveService(index)}
+                >
+                  {service} <img src={ExcludeIcon} width={16} />
+                </button>
+              ))}
             </div>
-            
 
             <Service
               text="Banho"
@@ -78,42 +96,71 @@ function ServicesScreen() {
               showChevron={true}
               onChevronClick={toggleService}
               isChevronRotated={serviceOpen}
+              onAddService={() => handleAddService("Banho")}
             />
 
             {serviceOpen && (
               <>
-              <div className='row-3'>
-                <Subservice text="Hidratação" />
-                <Subservice text="Tosa Higiênica" />
-              </div>
-              <div className='row-3'>
-                <Subservice text="Desembolo" />
-                <Subservice text="Tosa na Máquina" />
-              </div>
-              <div className='row-3'>
-                <Subservice text="Botinha" />
-                <Subservice text="Escovação" />
-              </div>
-              <div className='row-3'>
-                <Subservice text="Tosa Bebê na Máquina" />
-                
-              </div>
+                <div className='row-3'>
+                  <Subservice
+                    text="Hidratação"
+                    isSelected={selectedSubservices["Hidratação"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Hidratação", checked)}
+                  />
+                  <Subservice
+                    text="Tosa Higiênica"
+                    isSelected={selectedSubservices["Tosa Higiênica"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Tosa Higiênica", checked)}
+                  />
+                </div>
+                <div className='row-3'>
+                  <Subservice
+                    text="Desembolo"
+                    isSelected={selectedSubservices["Desembolo"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Desembolo", checked)}
+                  />
+                  <Subservice
+                    text="Tosa na Máquina"
+                    isSelected={selectedSubservices["Tosa na Máquina"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Tosa na Máquina", checked)}
+                  />
+                </div>
+                <div className='row-3'>
+                  <Subservice
+                    text="Botinha"
+                    isSelected={selectedSubservices["Botinha"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Botinha", checked)}
+                  />
+                  <Subservice
+                    text="Escovação"
+                    isSelected={selectedSubservices["Escovação"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Escovação", checked)}
+                  />
+                </div>
+                <div className='row-3'>
+                  <Subservice
+                    text="Tosa Bebê na Máquina"
+                    isSelected={selectedSubservices["Tosa Bebê na Máquina"] || false}
+                    onToggle={(checked) => handleToggleSubservice("Tosa Bebê na Máquina", checked)}
+                  />
+                </div>
               </>
-              
             )}
+
             <Service
               text="Banho e Tosa"
               description="Descrição do Serviço"
               showChevron={false}
+              onAddService={() => handleAddService("Banho e Tosa")}
             />
+
             <div className="row">
-              <button className='button-primary'> Escolher Data </button>
+              <button className='button-primary' onClick={goToCalendar}>Escolher Data</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   )
 }
 

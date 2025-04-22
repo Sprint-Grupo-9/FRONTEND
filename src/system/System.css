@@ -1,4 +1,3 @@
-
 :root {
     --red: #E52472;
     --dark-red: #BB1055;
@@ -62,6 +61,7 @@ h5 {
     font-size: 20px;
     color: var(--dark-gray);
 }
+
 .header {
     position: relative;
     width: 100%;
@@ -183,7 +183,7 @@ button {
         transition: 0.4s ease;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
     }
-    
+
 }
 
 .button-secondary {
@@ -197,6 +197,20 @@ button {
     img {
         transition: 0.4s ease;
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
+.button-secondary-2 {
+    background-color: transparent;
+    outline: 2px solid var(--red);
+    outline-offset: -2px;
+    display: flex;
+    gap: 1vw;
+    color: var(--red);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(2163%) hue-rotate(318deg) brightness(91%) contrast(97%);
     }
 }
 
@@ -236,7 +250,6 @@ button {
     }
 }
 
-.button-primary:hover,
 .button-secondary:hover,
 .button-tertiary:hover {
     transition: 0.4s ease;
@@ -250,9 +263,32 @@ button {
 
 }
 
+.button-primary:hover {
+    transition: 0.4s ease;
+    background-color: var(--dark-gray);
+    color: var(--white);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
+.button-secondary-2:hover {
+    transition: 0.4s ease;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    outline: var(--dark-gray);
+
+    img {
+        transition: 0.4s ease;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(170deg) brightness(101%) contrast(100%);
+    }
+}
+
 .button-quaternary:hover {
     transition: 0.4s ease;
-    background-color: var(--dark);
+    background-color: var(--dark-gray);
 
     img {
         transition: 0.4s ease;
@@ -283,9 +319,21 @@ button {
         margin-right: 1vw;
         filter: brightness(0) saturate(100%) invert(29%) sepia(69%) saturate(4238%) hue-rotate(320deg) brightness(91%) contrast(98%);
     }
+
     h3 {
         color: var(--dark);
     }
+}
+
+.button-none {
+    cursor: default;
+    background-color: var(--white);
+}
+
+.button-none-2 {
+    cursor: default;
+    font-size: 12px;
+    background-color: var(--white);
 }
 
 .button-navigation-active {
@@ -305,7 +353,7 @@ button {
 
 .button-navigation:hover {
     transition: 0.4s ease;
-    background-color: var(--dark-gray); 
+    background-color: var(--dark-gray);
 
     img {
         margin-right: 1vw;
@@ -316,7 +364,7 @@ button {
         color: var(--white);
     }
 }
-    
+
 .textbox-1 {
     width: 20vw;
     margin-left: 1vw;
@@ -335,37 +383,37 @@ button {
 .input-group {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  label {
+label {
     margin-left: 8px;
     margin-bottom: 6px;
     font-size: 12px;
     color: var(--dark-2);
-  }
+}
 
-  input {
+input {
     padding: 12px 16px;
     font-size: 20px;
     border: none;
     border-radius: 10px;
     background-color: var(--white);
     color: var(--dark);
-    transition: box-shadow 0.3s ease;   
-  }
+    transition: box-shadow 0.3s ease;
+}
 
-  input::placeholder {
+input::placeholder {
     color: var(--dark-gray);
-  }
+}
 
-  input:focus {
+input:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--light-blue);
-  }
+}
 
 
 
-  .card-service {
+.card-service {
     background-color: var(--white);
     height: 15%;
     width: 100%;
@@ -376,16 +424,16 @@ button {
         max-width: 30%;
     }
 
-    .img-background { 
+    .img-background {
         width: 10%;
     }
 
     .content-card {
         width: 90%;
     }
-  }
+}
 
-  .card-service-2 {
+.card-service-2 {
     background-color: var(--white);
     height: 100%;
     width: 49%;
@@ -396,45 +444,45 @@ button {
     padding-inline: 2vw;
     padding-block: 1vh;
     border-radius: 20px;
-  }
+}
 
-  .img-background {
-    background-color: var(--dark-gray);
+.img-background {
+    background-color: var(--red);
     border-radius: 20px;
     height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .content-card {
+.content-card {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+}
 
-  .data {
+.data {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .spacer {
+.spacer {
     width: 40%;
-  }
+}
 
-  .spacer-2 {
+.spacer-2 {
     width: 80%;
-  }
+}
 
-  .red-filter {
+.red-filter {
     filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(2163%) hue-rotate(318deg) brightness(91%) contrast(97%);
-  }
+}
 
-  .switch-button {
+.switch-button {
     width: 15%;
     height: 70%;
     background: var(--dark-gray);
@@ -442,13 +490,13 @@ button {
     position: relative;
     cursor: pointer;
     transition: background 0.3s;
-  }
-  
-  .switch-button.active {
+}
+
+.switch-button.active {
     background: var(--light-blue);
-  }
-  
-  .switch-handle {
+}
+
+.switch-handle {
     width: 12px;
     height: 12px;
     left: 3px;
@@ -457,21 +505,21 @@ button {
     border-radius: 50%;
     position: absolute;
     transition: left 0.3s;
-  }
-  
-  .switch-button.active .switch-handle {
-    left: 45px;
-  }
-  
+}
 
-  .chevron {
+.switch-button.active .switch-handle {
+    left: 45px;
+}
+
+
+.chevron {
     transition: transform 0.3s ease;
     cursor: pointer;
-  }
-  
-  .chevron.rotate {
+}
+
+.chevron.rotate {
     transform: rotate(180deg);
-  }
+}
 
 .row-3 {
     display: flex;

@@ -1,23 +1,15 @@
-import React, { useState } from "react"
-import imageLink from "../assets/pet-logo.svg"
-import PlusIcon from '../assets/plus-icon.svg'
-import SwitchButton from "./SwitchButton"
+import React from "react";
+import SwitchButton from "./SwitchButton";
 
-function Subservice({ text }) {
-  const [isActive, setIsActive] = useState(true)
-
-  const toggleSwitch = () => {
-    setIsActive(prev => !prev)
-  }
-
+function Subservice({ text, isSelected, onToggle }) {
   return (
     <div className="card-service-2">
       <div className="content-card">
         <h2>{text}</h2>
       </div>
-      <SwitchButton active={isActive} onClick={toggleSwitch} />
+      <SwitchButton active={isSelected} onClick={() => onToggle(!isSelected)} />
     </div>
-  )
+  );
 }
 
-export default Subservice
+export default Subservice;
