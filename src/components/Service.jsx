@@ -3,10 +3,10 @@ import PetIcon from "../assets/pet-logo.svg"
 import PlusIcon from '../assets/plus-icon.svg'
 import ChevronIcon from '../assets/chevron-icon.svg'
 import ServicesIcon from '../assets/services-icon.svg'
-import BanhoLogo from '../assets/banho-logo.svg'
 
 
-function Service({ text, description, showChevron = true, onChevronClick, isChevronRotated = false, onAddService }) {
+
+function Service({ logo, text, description, showChevron = true, onChevronClick, isChevronRotated = false, onAddService }) {
   return (
     <div className="card-service">
       {showChevron && (
@@ -21,7 +21,7 @@ function Service({ text, description, showChevron = true, onChevronClick, isChev
 
       <div className="img-background">
         <img
-          src={BanhoLogo}
+          src={logo}
           alt="Logo Pet Columbia"
           width={20}
         />

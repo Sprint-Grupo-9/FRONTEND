@@ -5,6 +5,7 @@ import ServicesIcon from '../assets/services-icon.svg'
 import AppointsIcon from '../assets/appoints-icon.svg'
 import PetsIcon from '../assets/pets-icon.svg'
 import ExcludeIcon from '../assets/exclude-icon.svg'
+import BanhoLogo from '../assets/banho-logo.svg'
 
 import { useState } from 'react'
 import { useNavigate } from "react-router-dom"
@@ -91,6 +92,7 @@ function ServicesScreen() {
             </div>
 
             <Service
+              logo={BanhoLogo}
               text="Banho"
               description="Selecione abaixo os subserviços"
               showChevron={true}
@@ -148,15 +150,16 @@ function ServicesScreen() {
             )}
 
             <Service
-              text="Banho e Tosa"
-              description="Descrição do Serviço"
+              logo={PetsIcon}
+              text="Corte de Unha"
               showChevron={false}
-              onAddService={() => handleAddService("Banho e Tosa")}
+              onAddService={() => handleAddService("Corte de Unha")}
             />
 
             <div className="row">
               <button className='button-primary' onClick={goToCalendar}>Escolher Data</button>
             </div>
+
           </div>
         </div>
       </div>
