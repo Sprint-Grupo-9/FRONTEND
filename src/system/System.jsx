@@ -1,4 +1,3 @@
-
 import HeaderScreen from './HeaderScreen'
 import ProfileScreen from './ProfileScreen'
 import AppointsScreen from './AppointsScreen'
@@ -6,6 +5,8 @@ import PetsScreen from './PetsScreen'
 import ServicesScreen from './ServicesScreen'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import CalendarScreen from './CalendarScreen'
+import LoginForm from '../components/auth/LoginForm'
+import RegisterForm from '../components/auth/RegisterForm'
 
 function System() {
     return (
@@ -17,6 +18,8 @@ function System() {
                     <Route path="/appointments" element={<AppointsScreen />} />
                     <Route path="/pets" element={<PetsScreen />} />
                     <Route path="/calendar" element={<CalendarScreen />} />
+                    <Route path="/login" element={<LoginForm />} />
+                    <Route path="/register" element={<RegisterForm />} />
                 </Routes>
             </BrowserRouter>
                 
