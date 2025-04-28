@@ -12,10 +12,10 @@ function Header() {
           </a>
         </div>
         <div className='links'>
-          <a href="URL">Serviços</a>
-          <a href="URL">Sobre Nós</a>
-          <a href="URL">Equipe</a>
-          <a href="URL">Contato</a>
+          <a href="#services">Serviços</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#footer">Contato</a>
         </div>
         <div className='buttons'>
           <button className='button-primary'>Cadastre-se</button>

@@ -3,7 +3,8 @@ import './Home.css'
 function Banner() {
     return (
         <div className="banner">
-            <div className="content-banner">
+        
+           <div className="content-banner">
                 <div className="titulo-banner">
                     <h2>TUDO PARA</h2>
                     <h1>SEU PET</h1>
@@ -18,4 +19,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Banner 
