@@ -1,6 +1,6 @@
-import './Home.css'
+import '../home/Home.css'
 import React from 'react';
-import Card from './components/CardSobre'
+import Card from '../components/CardSobre'
 
 function Sobre() {
 

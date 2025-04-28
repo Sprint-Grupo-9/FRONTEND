@@ -1,5 +1,5 @@
-import './Home.css'
-import CardTime from './components/CardTime'
+import '../home/Home.css'
+import CardTime from '../components/CardTime'
 
 
 function Equipe() {

@@ -1,4 +1,4 @@
-import './Home.css'
+import '../home/Home.css'
 import Card from '../components/Card'
 
 function Services() {

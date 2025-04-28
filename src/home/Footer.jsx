@@ -1,5 +1,5 @@
-import './Home.css'
-import Logo from './components/Logo'
+import '../home/Home.css'
+import Logo from '../components/Logo'
 
 function Footer() {
   return (

@@ -1,4 +1,4 @@
-import '../../home/Home.css'
+import '../home/Home.css'
 
 function CardSobre({ link }) {
     return (

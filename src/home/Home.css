@@ -231,7 +231,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--light-gray);
+  background-color: transparent;
   /* background-image: url(../assets/tab-services.png);  */
   display: flex;
   justify-content: center;

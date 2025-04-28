@@ -1,6 +1,6 @@
 import Logo from '../components/Logo'
 
-import './Home.css'
+import '../home/Home.css'
 
 function Header() {
   return (
