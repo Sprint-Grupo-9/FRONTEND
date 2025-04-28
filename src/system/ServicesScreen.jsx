@@ -150,7 +150,7 @@ function ServicesScreen() {
             )}
 
             <Service
-              logo={PetsIcon}
+              logo={ServicesIcon}
               text="Corte de Unha"
               showChevron={false}
               onAddService={() => handleAddService("Corte de Unha")}
@@ -161,6 +161,7 @@ function ServicesScreen() {
             </div>
 
           </div>
+
         </div>
       </div>
     </div>

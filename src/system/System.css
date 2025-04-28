@@ -41,12 +41,12 @@ h2 {
 h3 {
     font-weight: 700;
     font-size: 20px;
-    color: var(--dark);
+    color: var(--red);
 }
 
 p {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--dark-gray);
 }
 
@@ -165,7 +165,6 @@ button {
     padding-inline: 20px;
     padding-block: 10px;
     border-radius: 10px;
-    text-align: start;
     border: none;
     font-size: 20px;
     font-weight: 700;
@@ -411,8 +410,6 @@ input:focus {
     box-shadow: 0 0 0 2px var(--light-blue);
 }
 
-
-
 .card-service {
     background-color: var(--white);
     height: 15%;
@@ -460,6 +457,13 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
+}
+
+.date {
+    width: 10%;
+    text-align: center;
 }
 
 .data {
@@ -525,4 +529,12 @@ input:focus {
     display: flex;
     width: 100%;
     justify-content: space-between;
+}
+
+.top {
+    gap: 4vw;
+    display: flex;
+    width: 96%;
+    justify-content: end;
+    align-items: center;
 }

@@ -45,25 +45,17 @@ function CalendarScreen() {
 
   const navigate = useNavigate();
 
-  const goToProfile = () => {
-    navigate("/");
-  };
+  const goToProfile = () => navigate("/");
 
-  const goToServices = () => {
-    navigate("/services");
-  };
+  const goToServices = () => navigate("/services");
 
-  const goToAppoints = () => {
-    navigate("/appointments");
-  };
+  const goToAppoints = () => navigate("/appointments");
 
-  const goToPets = () => {
-    navigate("/pets");
-  };
+  const goToPets = () => navigate("/pets");
 
-  const goToCalendar = () => {
-    navigate("/calendar");
-  };
+  const goToProfilePet = () => navigate("/profile-pet");
+
+  const goToCalendar = () => navigate("/calendar");
 
   return (
     <div>
@@ -86,7 +78,7 @@ function CalendarScreen() {
           <div className='content'>
             <button className='button-secondary-2' onClick={goToServices}><img src={LeftIcon} width={10} /> Voltar aos Serviços</button>
             <div className="row">
-              <Calendar />
+              <Calendar/>
             </div>
 
             {selectedServices.length > 0 && (
@@ -111,8 +103,6 @@ function CalendarScreen() {
               <button className='button-primary'> Agendar </button>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>

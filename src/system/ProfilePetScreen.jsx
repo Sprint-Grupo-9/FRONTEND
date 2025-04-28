@@ -19,7 +19,7 @@ import { useRef } from 'react';
 import './System.css'
 import HeaderScreen from './HeaderScreen'
 
-function ProfileScreen() {
+function ProfilePetScreen() {
 
   const navigate = useNavigate();
 
@@ -108,26 +108,6 @@ function ProfileScreen() {
                 {editable ? "Cancelar" : "Editar Dados"} 
               </button>
             </div>
-
-            {/* <div className="row">
-              <Textbox
-                label='Nome'
-                placeholder='Matheus'
-                value={userData.nome}
-                name="nome"
-                onChange={handleChange}
-                disabled={!editable}
-              />
-              <Textbox
-                label='CPF'
-                placeholder='440.824.488-02'
-                value={userData.cpf}
-                name="cpf"
-                onChange={handleChange}
-                disabled={!editable}
-              />
-            </div> */}
-
             <div className="row">
               <Textbox
                 label='Email'
@@ -195,23 +175,6 @@ function ProfileScreen() {
               />
             </div>
 
-            <div className="row">
-              {/* <Textbox
-                label='Senha'
-                placeholder='***********'
-                value={userData.senha}
-                name="senha"
-                onChange={handleChange}
-                disabled={!editable}
-              />
-              <Textbox
-                label='Confirmar Senha'
-                placeholder='***********'
-                value={userData.confirmarSenha}
-                name="confirmarSenha"
-                onChange={handleChange}
-                disabled={!editable} */}
-            </div>
           </div>
 
         </div>
@@ -221,4 +184,4 @@ function ProfileScreen() {
   )
 }
 
-export default ProfileScreen
+export default ProfilePetScreen

@@ -6,6 +6,7 @@ import PetsScreen from './PetsScreen'
 import ServicesScreen from './ServicesScreen'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import CalendarScreen from './CalendarScreen'
+import ProfilePetScreen from './ProfilePetScreen'
 
 function System() {
     return (
@@ -17,6 +18,8 @@ function System() {
                     <Route path="/appointments" element={<AppointsScreen />} />
                     <Route path="/pets" element={<PetsScreen />} />
                     <Route path="/calendar" element={<CalendarScreen />} />
+                    <Route path="/profile-pet" element={<ProfilePetScreen />} />
+
                 </Routes>
             </BrowserRouter>
                 

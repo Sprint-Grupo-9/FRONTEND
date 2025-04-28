@@ -8,7 +8,6 @@ import UserIcon from '../assets/user-icon.svg'
 import ServicesIcon from '../assets/services-icon.svg'
 import AppointsIcon from '../assets/appoints-icon.svg'
 import PetsIcon from '../assets/pets-icon.svg'
-import PenciIcon from '../assets/pencil-icon.svg'
 
 
 import { useNavigate } from "react-router-dom";
@@ -16,26 +15,23 @@ import { useNavigate } from "react-router-dom";
 import './System.css'
 
 import HeaderScreen from './HeaderScreen'
+import Pet from '../components/Pet'
 
 function PetsScreen() {
 
   const navigate = useNavigate();
+  
+  const goToProfile = () => navigate("/");
 
-  const goToProfile = () => {
-    navigate("/");
-  };
+  const goToServices = () => navigate("/services");
 
-  const goToServices = () => {
-    navigate("/services");
-  };
+  const goToAppoints = () => navigate("/appointments");
 
-  const goToAppoints = () => {
-    navigate("/appointments");
-  };
+  const goToPets = () => navigate("/pets");
 
-  const goToPets = () => {
-    navigate("/pets");
-  };
+  const goToProfilePet = () => navigate("/profile-pet");
+
+  const goToCalendar = () => navigate("/calendar");
 
   return (
     <div>
@@ -56,7 +52,20 @@ function PetsScreen() {
           </div>
 
           <div className='content'>
-
+            <Pet 
+            logo={PetsIcon}
+            text="Mike" 
+            description="Cachorro" 
+            date="15/05"
+            time="15h"
+            />
+            <Pet 
+            logo={PetsIcon}
+            text="Tom" 
+            description="Gato" 
+            date="15/05"
+            time="15h"
+            />
           </div>
         </div>
       </div>

@@ -3,20 +3,11 @@ import PetIcon from "../assets/pet-logo.svg"
 import PlusIcon from '../assets/plus-icon.svg'
 import ChevronIcon from '../assets/chevron-icon.svg'
 import ServicesIcon from '../assets/services-icon.svg'
+import PenciIcon from '../assets/pencil-icon.svg'
 
-function Service({ logo, text, description, showChevron = true, onChevronClick, isChevronRotated = false, onAddService }) {
+function Pet({ logo, text, description, time, date }) {
   return (
     <div className="card-service">
-      {showChevron && (
-        <img
-          src={ChevronIcon}
-          alt="Chevron Icon"
-          width={40}
-          className={`red-filter chevron ${isChevronRotated ? 'rotate' : ''}`}
-          onClick={onChevronClick}
-        />
-      )}
-
       <div className="img-background">
         <img
           src={logo}
@@ -30,11 +21,13 @@ function Service({ logo, text, description, showChevron = true, onChevronClick, 
         <p>{description}</p>
       </div>
 
-      <button className='button-quaternary' onClick={onAddService}>
-        <img src={PlusIcon} width={16} /> Adicionar Serviço
+      <button className='button-quaternary'>
+        <img src={PenciIcon} width={16} /> Editar Dados do Pet
       </button>
+
+
     </div>
   )
 }
 
-export default Service
+export default Pet
