@@ -1,4 +1,4 @@
-import Logo from './components/Logo'
+import Logo from '../components/Logo'
 
 import './Home.css'
 
@@ -22,7 +22,6 @@ function Header() {
           <button className='button-secondary'>Login</button>
         </div>
       </div>
-
     </div>
   )
 }
