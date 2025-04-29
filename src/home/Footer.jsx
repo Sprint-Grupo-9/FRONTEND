@@ -18,7 +18,7 @@ function Footer() {
             <div className='mail-icon'></div>
           </div>
           <div className="tell">
-            <div className="text-contact">11 98765-4321</div>
+            <div className="text-contact">(11) 4975-8092</div>
             <div className='mail-icon'></div>
           </div>
         </div>

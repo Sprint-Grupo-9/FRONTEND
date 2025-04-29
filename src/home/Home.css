@@ -231,7 +231,7 @@ button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--light-gray);
+  background-color: trans;
   /* background-image: url(../assets/tab-services.png);  */
   display: flex;
   justify-content: center;
@@ -339,14 +339,14 @@ button {
 
 .sobre-container .about-content .descricao {
   position: absolute;
-  width: 532px;
+  width: 630px;
   top: 142px;
-  left: 0;
+  left: -100px;
   font-family: "Figtree-Light", Helvetica;
   font-weight: 300;
   color: #ffffff;
   font-size: 20px;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   line-height: normal;
 }
 
@@ -459,7 +459,7 @@ button {
 .time-container .team-content .text-wrapper-13 {
   position: absolute;
   top: 135px;
-  left: 83px;
+  left: 70px;
   font-family: "Figtree-Bold", Helvetica;
   font-weight: 700;
   color: #e52472;
@@ -486,7 +486,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/priscila.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-10 {
@@ -500,7 +501,7 @@ button {
 }
 
 .time-container .team-content .text-wrapper-14 {
-  left: 78px;
+  left: 65px;
   color: #0f0a2a;
   position: absolute;
   top: 135px;
@@ -529,7 +530,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/leandro.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-11 {
@@ -562,7 +564,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/fabi.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-12 {
@@ -576,7 +579,7 @@ button {
 }
 
 .time-container .team-content .text-wrapper-16 {
-  left: 73px;
+  left: 82px;
   color: #e52472;
   position: absolute;
   top: 135px;
@@ -595,7 +598,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/rute.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-13 {
@@ -614,7 +618,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/keila.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-14 {
@@ -647,7 +652,8 @@ button {
   height: 90px;
   top: 7px;
   left: 7px;
-  background-image: url(../assets/mask-group-5.png);
+  background-image: url(../assets/taina.jpg);
+  background-size: cover;
 }
 
 .time-container .team-content .overlap-15 {
